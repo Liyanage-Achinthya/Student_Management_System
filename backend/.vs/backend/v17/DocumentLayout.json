@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\Student_Management_System\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|c:\\projects\\student_management_system\\backend\\backend\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|solutionrelative:backend\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|c:\\projects\\student_management_system\\backend\\backend\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|solutionrelative:backend\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|c:\\projects\\student_management_system\\backend\\backend\\models\\entites\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|solutionrelative:backend\\models\\entites\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|c:\\projects\\student_management_system\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|c:\\projects\\student_management_system\\backend\\backend\\models\\updatestudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|solutionrelative:backend\\models\\updatestudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|c:\\projects\\student_management_system\\backend\\backend\\models\\addstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|solutionrelative:backend\\models\\addstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|c:\\projects\\student_management_system\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|c:\\projects\\student_management_system\\backend\\backend\\migrations\\20260114052732_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|solutionrelative:backend\\migrations\\20260114052732_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|c:\\projects\\student_management_system\\backend\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F48EAA9F-680B-4178-B690-E46B06239F96}|backend\\backend.csproj|solutionrelative:backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 268,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Projects\\Student_Management_System\\backend\\backend\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Projects\\Student_Management_System\\backend\\backend\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "backend\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T05:34:18.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\Student_Management_System\\backend\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "C:\\Projects\\Student_Management_System\\backend\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T05:20:33.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Projects\\Student_Management_System\\backend\\backend\\Models\\Entites\\Student.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Entites\\Student.cs",
+              "ToolTip": "C:\\Projects\\Student_Management_System\\backend\\backend\\Models\\Entites\\Student.cs",
+              "RelativeToolTip": "backend\\Models\\Entites\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T05:09:46.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateStudentDto.cs",
+              "DocumentMoniker": "C:\\Projects\\Student_Management_System\\backend\\backend\\Models\\UpdateStudentDto.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\UpdateStudentDto.cs",
+              "ToolTip": "C:\\Projects\\Student_Management_System\\backend\\backend\\Models\\UpdateStudentDto.cs",
+              "RelativeToolTip": "backend\\Models\\UpdateStudentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T06:38:17.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Projects\\Student_Management_System\\backend\\backend\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "backend\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Projects\\Student_Management_System\\backend\\backend\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "backend\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T05:12:55.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddStudentDto.cs",
+              "DocumentMoniker": "C:\\Projects\\Student_Management_System\\backend\\backend\\Models\\AddStudentDto.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\AddStudentDto.cs",
+              "ToolTip": "C:\\Projects\\Student_Management_System\\backend\\backend\\Models\\AddStudentDto.cs",
+              "RelativeToolTip": "backend\\Models\\AddStudentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T05:57:38.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projects\\Student_Management_System\\backend\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "backend\\appsettings.json",
+              "ToolTip": "C:\\Projects\\Student_Management_System\\backend\\backend\\appsettings.json",
+              "RelativeToolTip": "backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-14T05:16:27.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20260114052732_initial migration.cs",
+              "DocumentMoniker": "C:\\Projects\\Student_Management_System\\backend\\backend\\Migrations\\20260114052732_initial migration.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20260114052732_initial migration.cs",
+              "ToolTip": "C:\\Projects\\Student_Management_System\\backend\\backend\\Migrations\\20260114052732_initial migration.cs",
+              "RelativeToolTip": "backend\\Migrations\\20260114052732_initial migration.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T05:27:32.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "backend.csproj",
+              "DocumentMoniker": "C:\\Projects\\Student_Management_System\\backend\\backend\\backend.csproj",
+              "RelativeDocumentMoniker": "backend\\backend.csproj",
+              "ToolTip": "C:\\Projects\\Student_Management_System\\backend\\backend\\backend.csproj",
+              "RelativeToolTip": "backend\\backend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-14T05:03:20.898Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 132,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

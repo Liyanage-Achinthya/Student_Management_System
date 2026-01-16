@@ -1,0 +1,27 @@
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.DS_Store
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+frontend/.vite/
+frontend/.turbo/
+
+# ===============================
+backend/.vs/                 # Visual Studio cache & temp files
+backend/bin/                 # compiled binaries
+backend/obj/                 # intermediate build files
+backend/*.user               # user-specific settings
+backend/*.suo
+backend/*.sln.docstates
+backend/*.ide
+backend/appsettings.Development.json
+
+# OS / Misc
+.DS_Store
+Thumbs.db
+
+*.log
