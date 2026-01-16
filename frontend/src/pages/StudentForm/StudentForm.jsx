@@ -17,11 +17,36 @@ const StudentForm = () => {
 
     const navigate = useNavigate();
 
+    const [isEmailValid, setIsEmailValid] = useState(true);
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
     const handleChange = (e) => {
-        setForm({ ...form, [e.target.name]: e.target.value });
+        const { name, value } = e.target;
+
+        if (name === "email") {
+            setIsEmailValid(emailRegex.test(value));
+        }
+
+        if (name === "telephone") {
+            if (!/^\d*$/.test(value)) return;
+        }
+
+        setForm({ ...form, [name]: value });
     };
 
+
     const addStudentToTable = () => {
+        if (!form.fullName || !form.address || !form.dateOfBirth || !form.gender || !form.email || !form.telephone) {
+            alert("Please fill all fields");
+            return;
+        }
+
+        if (!isEmailValid) {
+            alert("Please enter a valid email address");
+            return;
+        }
         setStudents([...students, form]);
         setForm({
             fullName: "",
@@ -34,6 +59,10 @@ const StudentForm = () => {
     };
 
     const submitToDatabase = async () => {
+        if (students.length === 0) {
+            alert("No students to submit");
+            return;
+        }
         try {
             for (const student of students) {
                 await api.post("/students", {
@@ -69,6 +98,7 @@ const StudentForm = () => {
                                 name="fullName"
                                 value={form.fullName}
                                 onChange={handleChange}
+                                required
                             />
                         </div>
                     </div>
@@ -81,6 +111,7 @@ const StudentForm = () => {
                                 name="address"
                                 value={form.address}
                                 onChange={handleChange}
+                                required
                             />
                         </div>
                     </div>
@@ -93,6 +124,7 @@ const StudentForm = () => {
                                 name="dateOfBirth"
                                 value={form.dateOfBirth}
                                 onChange={handleChange}
+                                required
                             />
                             <span className="gender-label">Gender</span>
                             <div className="radio-group">
@@ -104,6 +136,7 @@ const StudentForm = () => {
                                         value="Male"
                                         checked={form.gender === "Male"}
                                         onChange={handleChange}
+                                        required
                                     />
                                 </label>
                                 <label className="radio-option">
@@ -128,9 +161,15 @@ const StudentForm = () => {
                                 name="email"
                                 value={form.email}
                                 onChange={handleChange}
+                                required
                             />
                         </div>
                     </div>
+                    {!isEmailValid && (
+                        <p>
+                            Please enter a valid email address.
+                        </p>
+                    )}
 
                     <div className="form-row">
                         <label>Telephone</label>
@@ -140,6 +179,8 @@ const StudentForm = () => {
                                 name="telephone"
                                 value={form.telephone}
                                 onChange={handleChange}
+                                maxLength={10}
+                                required
                             />
                         </div>
                     </div>

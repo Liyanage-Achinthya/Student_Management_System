@@ -71,14 +71,14 @@ td {
 }
 
 .table-input {
-  background-color: #ffffff;
-  color: #000000;
-  border: 1px solid #ccc;
-  padding: 6px 8px;
-  border-radius: 4px;
-  width: 100%;
-  font-size: 14px;
-  box-sizing: border-box;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ccc;
+    padding: 6px 8px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
 td button {
@@ -145,4 +145,13 @@ hr {
 
 .btn-delete:hover {
     background-color: #f4253a;
+}
+
+.email-error {
+    color: red;
+    font-size: 14px;
+    margin: 2px 0 -40px 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
 }

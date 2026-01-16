@@ -6,12 +6,26 @@ const StudentList = () => {
     const [telephone, setTelephone] = useState("");
     const [student, setStudent] = useState(null);
     const [isEditing, setIsEditing] = useState(false);
+    const [isEmailValid, setIsEmailValid] = useState(true);
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    const handleTelephoneInput = (value, setter) => {
+        if (/^\d*$/.test(value)) {
+            setter(value);
+        }
+    };
 
     const searchStudent = async () => {
+        if (!telephone.trim()) {
+            alert("Please enter a telephone number to search");
+            return;
+        }
         try {
             const res = await api.get(`/students/by-telephone/${telephone}`);
             setStudent(res.data);
             setIsEditing(false);
+            setIsEmailValid(true);
         } catch {
             alert("Student not found");
             setStudent(null);
@@ -26,6 +40,11 @@ const StudentList = () => {
     };
 
     const saveStudent = async () => {
+        if (!isEmailValid) {
+            alert("Please enter a valid email address before saving.");
+            return;
+        }
+
         try {
             await api.put(`/students/${student.id}`, {
                 fullName: student.fullName,
@@ -43,6 +62,13 @@ const StudentList = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
+
+        if (name === "telephone" && !/^\d*$/.test(value)) return;
+
+        if (name === "email") {
+            setIsEmailValid(emailRegex.test(value));
+        }
+
         setStudent({ ...student, [name]: value });
     };
 
@@ -58,7 +84,10 @@ const StudentList = () => {
                     <input
                         type="text"
                         value={telephone}
-                        onChange={(e) => setTelephone(e.target.value)}
+                        onChange={(e) =>
+                            handleTelephoneInput(e.target.value, setTelephone)
+                        }
+                        maxLength={10}
                     />
                     <button type="button" onClick={searchStudent}>
                         Search
@@ -106,12 +135,19 @@ const StudentList = () => {
                                     </td>
                                     <td>
                                         {isEditing ? (
-                                            <input
-                                                className="table-input"
-                                                name="email"
-                                                value={student.email}
-                                                onChange={handleChange}
-                                            />
+                                            <div>
+                                                <input
+                                                    className="table-input"
+                                                    name="email"
+                                                    value={student.email}
+                                                    onChange={handleChange}
+                                                />
+                                                {!isEmailValid && (
+                                                    <p className="email-error">
+                                                        Please enter a valid email address.
+                                                    </p>
+                                                )}
+                                            </div>
                                         ) : (
                                             student.email
                                         )}
@@ -123,6 +159,7 @@ const StudentList = () => {
                                                 name="telephone"
                                                 value={student.telephone}
                                                 onChange={handleChange}
+                                                maxLength={10}
                                             />
                                         ) : (
                                             student.telephone
@@ -130,12 +167,25 @@ const StudentList = () => {
                                     </td>
                                     <td>
                                         {isEditing ? (
-                                            <button className="btn-save" onClick={saveStudent}><i class='bx  bx-save'></i> </button>
+                                            <button
+                                                className="btn-save"
+                                                onClick={saveStudent}
+                                            >
+                                                <i className="bx bx-save"></i>
+                                            </button>
                                         ) : (
-                                            <button className="btn-edit" onClick={() => setIsEditing(true)}><i class='bx  bx-edit'></i> </button>
+                                            <button
+                                                className="btn-edit"
+                                                onClick={() => setIsEditing(true)}
+                                            >
+                                                <i className="bx bx-edit"></i>
+                                            </button>
                                         )}
-                                        <button className="btn-delete" onClick={() => deleteStudent(student.id)}>
-                                            <i class='bx  bx-trash'></i>
+                                        <button
+                                            className="btn-delete"
+                                            onClick={() => deleteStudent(student.id)}
+                                        >
+                                            <i className="bx bx-trash"></i>
                                         </button>
                                     </td>
                                 </tr>

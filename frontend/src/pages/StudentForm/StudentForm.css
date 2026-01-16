@@ -86,8 +86,14 @@ input[type="date"] {
     font-size: 14px;
 }
 
-.input-telephone{
+.input-telephone {
     width: 180px;
+}
+
+p {
+    color: red;
+    font-size: 14px;
+    margin: -10px 0 8px 160px;
 }
 
 button {
