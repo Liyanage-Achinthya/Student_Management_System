@@ -54,8 +54,7 @@
               "RelativeToolTip": "backend\\Models\\Entites\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T05:09:46.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T05:09:46.758Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "backend\\Models\\AddStudentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T05:57:38.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T05:57:38.699Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "backend\\Models\\UpdateStudentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T06:38:17.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T06:38:17.754Z"
             },
             {
               "$type": "Document",
@@ -93,8 +90,7 @@
               "RelativeToolTip": "backend\\Program.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T05:20:33.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T05:20:33.569Z"
             },
             {
               "$type": "Document",
@@ -106,8 +102,7 @@
               "RelativeToolTip": "backend\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T05:12:55.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T05:12:55.917Z"
             },
             {
               "$type": "Document",
@@ -117,7 +112,7 @@
               "RelativeDocumentMoniker": "backend\\Controllers\\StudentsController.cs",
               "ToolTip": "C:\\Projects\\Student_Management_System\\backend\\backend\\Controllers\\StudentsController.cs",
               "RelativeToolTip": "backend\\Controllers\\StudentsController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAFMAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwFMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-14T05:34:18.882Z",
               "EditorCaption": ""

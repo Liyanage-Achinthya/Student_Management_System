@@ -13,14 +13,15 @@ const StudentForm = () => {
         telephone: "",
     });
 
-    const [students, setStudents] = useState([]);
-
     const navigate = useNavigate();
 
-    const [isEmailValid, setIsEmailValid] = useState(true);
+    const [students, setStudents] = useState([]);
 
+    const [isEmailValid, setIsEmailValid] = useState(true);
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+    const [isTelephoneValid, setIsTelephoneValid] = useState(true);
+    const telephoneRegex = /^\d*$/;
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -30,12 +31,13 @@ const StudentForm = () => {
         }
 
         if (name === "telephone") {
-            if (!/^\d*$/.test(value)) return;
+            const isValid = telephoneRegex.test(value);
+            setIsTelephoneValid(isValid);
+            if (!isValid) return;
         }
 
         setForm({ ...form, [name]: value });
     };
-
 
     const addStudentToTable = () => {
         if (!form.fullName || !form.address || !form.dateOfBirth || !form.gender || !form.email || !form.telephone) {

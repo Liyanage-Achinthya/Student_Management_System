@@ -3,29 +3,28 @@ import api from "../../api";
 import "./StudentList.css";
 
 const StudentList = () => {
-    const [telephone, setTelephone] = useState("");
+    const [telephone, setTelephone] = useState(""); // search input
     const [student, setStudent] = useState(null);
     const [isEditing, setIsEditing] = useState(false);
-    const [isEmailValid, setIsEmailValid] = useState(true);
 
+    const [isEmailValid, setIsEmailValid] = useState(true);
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    const handleTelephoneInput = (value, setter) => {
-        if (/^\d*$/.test(value)) {
-            setter(value);
-        }
-    };
+    const [isTelephoneValid, setIsTelephoneValid] = useState(true);
+    const telephoneRegex = /^\d*$/;
 
     const searchStudent = async () => {
         if (!telephone.trim()) {
             alert("Please enter a telephone number to search");
             return;
         }
+
         try {
             const res = await api.get(`/students/by-telephone/${telephone}`);
             setStudent(res.data);
             setIsEditing(false);
             setIsEmailValid(true);
+            setIsTelephoneValid(true);
         } catch {
             alert("Student not found");
             setStudent(null);
@@ -42,6 +41,11 @@ const StudentList = () => {
     const saveStudent = async () => {
         if (!isEmailValid) {
             alert("Please enter a valid email address before saving.");
+            return;
+        }
+
+        if (!isTelephoneValid) {
+            alert("Please enter a valid telephone number before saving.");
             return;
         }
 
@@ -63,10 +67,22 @@ const StudentList = () => {
     const handleChange = (e) => {
         const { name, value } = e.target;
 
-        if (name === "telephone" && !/^\d*$/.test(value)) return;
+        if (name === "searchTelephone") {
+            const isValid = telephoneRegex.test(value);
+            setIsTelephoneValid(isValid);
+            if (!isValid) return; 
+            setTelephone(value);
+            return;
+        }
 
         if (name === "email") {
             setIsEmailValid(emailRegex.test(value));
+        }
+
+        if (name === "telephone") {
+            const isValid = telephoneRegex.test(value);
+            setIsTelephoneValid(isValid);
+            if (!isValid) return; 
         }
 
         setStudent({ ...student, [name]: value });
@@ -80,13 +96,13 @@ const StudentList = () => {
                 <div className="search-section">
                     <label>Telephone</label>
                 </div>
+
                 <div className="form-input">
                     <input
                         type="text"
+                        name="searchTelephone"
                         value={telephone}
-                        onChange={(e) =>
-                            handleTelephoneInput(e.target.value, setTelephone)
-                        }
+                        onChange={handleChange}
                         maxLength={10}
                     />
                     <button type="button" onClick={searchStudent}>
@@ -135,19 +151,12 @@ const StudentList = () => {
                                     </td>
                                     <td>
                                         {isEditing ? (
-                                            <div>
-                                                <input
-                                                    className="table-input"
-                                                    name="email"
-                                                    value={student.email}
-                                                    onChange={handleChange}
-                                                />
-                                                {!isEmailValid && (
-                                                    <p className="email-error">
-                                                        Please enter a valid email address.
-                                                    </p>
-                                                )}
-                                            </div>
+                                            <input
+                                                className="table-input"
+                                                name="email"
+                                                value={student.email}
+                                                onChange={handleChange}
+                                            />
                                         ) : (
                                             student.email
                                         )}
