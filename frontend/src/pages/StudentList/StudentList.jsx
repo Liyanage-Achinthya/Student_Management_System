@@ -70,7 +70,7 @@ const StudentList = () => {
         if (name === "searchTelephone") {
             const isValid = telephoneRegex.test(value);
             setIsTelephoneValid(isValid);
-            if (!isValid) return; 
+            if (!isValid) return;
             setTelephone(value);
             return;
         }
@@ -82,7 +82,7 @@ const StudentList = () => {
         if (name === "telephone") {
             const isValid = telephoneRegex.test(value);
             setIsTelephoneValid(isValid);
-            if (!isValid) return; 
+            if (!isValid) return;
         }
 
         setStudent({ ...student, [name]: value });
